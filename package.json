@@ -1,0 +1,32 @@
+{
+  "name": "hyperswarm-p2p-auction",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "bootstrap:dht": "hyperdht --bootstrap --host 127.0.0.1 --port 30001",
+    "start:server": "node ./src/server.js",
+    "create-auction": "node ./src/client-create-auction.js",
+    "close-auction": "node ./src/client-close-auction.js",
+    "bidder": "node ./src/client-bidder.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hcutcu/hyperswarm-p2p-auction.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hcutcu/hyperswarm-p2p-auction/issues"
+  },
+  "homepage": "https://github.com/hcutcu/hyperswarm-p2p-auction#readme",
+  "dependencies": {
+    "@hyperswarm/rpc": "^3.3.1",
+    "b4a": "^1.6.6",
+    "hyperbee": "^2.18.2",
+    "hypercore": "^10.32.6",
+    "hyperdht": "^6.11.5",
+    "hyperswarm": "^4.7.13"
+  }
+}
